@@ -1,3 +1,4 @@
+import 'package:bacaan_sholat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -11,7 +12,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -23,11 +24,16 @@ class _MainPageState extends State<MainPage> {
                   child: InkWell(
                     highlightColor: Colors.transparent,
                     splashColor: Colors.transparent,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => NiatSholat()));
+                    },
                     child: Column(
                       children: [
                         Image(
-                          image: AssetImage("assets/images/shalat.png"),
+                          image: AssetImage("assets/images/sholatt.png"),
                           height: 100,
                           width: 100,
                         ),
