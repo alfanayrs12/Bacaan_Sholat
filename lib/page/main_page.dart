@@ -65,7 +65,7 @@ class _MainPageState extends State<MainPage> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Bacaan Sholat",
+                          "Bacaan Sholat-next update-",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
@@ -91,7 +91,7 @@ class _MainPageState extends State<MainPage> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Ayat Kursi",
+                          "Ayat Kursi-next update-",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
