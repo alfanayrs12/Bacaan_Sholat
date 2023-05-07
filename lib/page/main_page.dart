@@ -141,7 +141,28 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
               ),
-              
+              SizedBox(height: 40
+              ),
+              Container(
+                margin: EdgeInsets.all(10),
+                child: Expanded(
+                  child: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    
+                    child: Column(
+                      children: [
+                        SizedBox(height: 10),
+                        Text(
+                          "Next Buat Apalagi Nih?",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
