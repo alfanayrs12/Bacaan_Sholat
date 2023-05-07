@@ -3,14 +3,14 @@ import 'package:bacaan_sholat/model/model_bacaan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
-class BacaanSholat extends StatefulWidget {
-  const BacaanSholat({Key? key}) : super(key: key);
+class bacaansholat extends StatefulWidget {
+  const bacaansholat({Key? key}) : super(key: key);
 
   @override
-  _BacaanSholatState createState() => _BacaanSholatState();
+  _bacaansholatState createState() => _bacaansholatState();
 }
 
-class _BacaanSholatState extends State<BacaanSholat> {
+class _bacaansholatState extends State<bacaansholat> {
   Future<List<ModelBacaan>> ReadJsonData() async {
     final jsondata =
         await rootBundle.rootBundle.loadString('assets/data/bacaanshalat.json');
@@ -77,7 +77,7 @@ class _BacaanSholatState extends State<BacaanSholat> {
                       bottomRight: Radius.circular(30),
                     ),
                     child: Image.asset(
-                      "assets/images/bg_doa.png",
+                      "assets/images/bacaandoa2.png",
                       width: 330,
                       height: 200,
                       fit: BoxFit.fitWidth,

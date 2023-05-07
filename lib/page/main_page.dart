@@ -1,3 +1,4 @@
+import 'package:bacaan_sholat/page/bacaan_sholat_page.dart';
 import 'package:bacaan_sholat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
 
@@ -55,7 +56,12 @@ class _MainPageState extends State<MainPage> {
                   child: InkWell(
                     highlightColor: Colors.transparent,
                     splashColor: Colors.transparent,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => bacaansholat()));
+                    },
                     child: Column(
                       children: [
                         Image(
@@ -65,7 +71,7 @@ class _MainPageState extends State<MainPage> {
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "Bacaan Sholat(Next Update)",
+                          "Bacaan Sholat",
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.bold),
                         ),
