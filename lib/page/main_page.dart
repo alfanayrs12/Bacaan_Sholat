@@ -1,5 +1,6 @@
 import 'package:bacaan_sholat/page/ayat_kursi_page.dart';
 import 'package:bacaan_sholat/page/bacaan_sholat_page.dart';
+import 'package:bacaan_sholat/page/kata_kata_page.dart';
 import 'package:bacaan_sholat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
 
@@ -36,8 +37,8 @@ class _MainPageState extends State<MainPage> {
                       children: [
                         Image(
                           image: AssetImage("assets/images/sholatt.png"),
-                          height: 100,
-                          width: 100,
+                          height: 50,
+                          width: 50,
                         ),
                         SizedBox(height: 10),
                         Text(
@@ -67,8 +68,8 @@ class _MainPageState extends State<MainPage> {
                       children: [
                         Image(
                           image: AssetImage("assets/images/bacaan.png"),
-                          height: 100,
-                          width: 100,
+                          height: 50,
+                          width: 50,
                         ),
                         SizedBox(height: 10),
                         Text(
@@ -96,8 +97,8 @@ class _MainPageState extends State<MainPage> {
                       children: [
                         Image(
                           image: AssetImage("assets/images/ayatkursi.png"),
-                          height: 100,
-                          width: 100,
+                          height: 50,
+                          width: 50,
                         ),
                         SizedBox(height: 10),
                         Text(
@@ -110,6 +111,37 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
               ),
+              SizedBox(height: 40
+              ),
+              Container(
+                margin: EdgeInsets.all(10),
+                child: Expanded(
+                  child: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => katakata()));
+                    },
+                    child: Column(
+                      children: [
+                        Image(
+                          image: AssetImage("assets/images/allah.png"),
+                          height: 50,
+                          width: 50,
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          "Musuh Islam",
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              
             ],
           ),
         ),
