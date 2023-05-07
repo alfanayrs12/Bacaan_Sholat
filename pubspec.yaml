@@ -60,9 +60,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  - assets/images/bg_doa.png
-  - assets/images/bg_quran.jpg
-  - assets/images/bg_shalat.png
+  
   - assets/images/bacaan.png
   - assets/images/ayatkursi.png
   - assets/images/shalat.png
