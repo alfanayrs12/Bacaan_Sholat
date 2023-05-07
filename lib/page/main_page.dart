@@ -1,6 +1,6 @@
 import 'package:bacaan_sholat/page/ayat_kursi_page.dart';
 import 'package:bacaan_sholat/page/bacaan_sholat_page.dart';
-import 'package:bacaan_sholat/page/kata_kata_page.dart';
+import 'package:bacaan_sholat/page/musuh_allah.dart';
 import 'package:bacaan_sholat/page/niat_sholat_page.dart';
 import 'package:flutter/material.dart';
 
